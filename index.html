@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Digital Experience</title>
-    <link rel="icon" type="image/x-icon" href="logooo.png">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/djvqkfvdn/image/upload/v1766572752/Desain_tanpa_judul_4_zke0bu.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -13,22 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif'],
-                    },
-                    colors: {
-                        luxury: {
-                            900: '#09090b', // Deep Zinc
-                            800: '#18181b',
-                            accent: '#d4d4d8', // Light Zinc
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'],
+                            display: ['Outfit', 'sans-serif'],
+                        },
+                        colors: {
+                            luxury: {
+                                900: '#09090b', // Deep Zinc
+                                800: '#18181b',
+                                accent: '#d4d4d8', // Light Zinc
+                            }
+                        },
+                        backgroundImage: {
+                            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                         }
-                    },
-                    backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                     }
                 }
             }
@@ -184,37 +186,52 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="reveal group cursor-pointer">
-                    <div class="overflow-hidden rounded-lg mb-4 relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <!-- <img src="https://images.unsplash.com/photo-1481487484168-9b995ecc1679?q=80&w=800&auto=format&fit=crop"  -->
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                             class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 1">
-                    </div>
-                    <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Nebula Finance</h3>
-                    <p class="text-sm text-zinc-500 mt-1">Fintech Dashboard / React & D3.js</p>
-                </article>
+                <a href="https://myfoods.hanavy.online" target="_blank" class="reveal group cursor-pointer block">
+                    <article>
+                        <div class="overflow-hidden rounded-lg mb-4 relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <!-- <img src="https://images.unsplash.com/photo-1481487484168-9b995ecc1679?q=80&w=800&auto=format&fit=crop"  -->
+                            <!-- <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  -->
+                            <img src="https://res.cloudinary.com/djvqkfvdn/image/upload/v1766573784/Desain_tanpa_judul_5_mpwj36.png" 
+                                 class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 1">
+                        </div>
+                        <!-- <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Nebula Finance</h3> -->
+                        <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Dapur Nusantara</h3>
+                        <!-- <p class="text-sm text-zinc-500 mt-1">Fintech Dashboard / React & D3.js</p> -->
+                        <p class="text-sm text-zinc-500 mt-1">Indonesian Culinary Food</p>
+                    </article>
+                </a>
 
-                <article class="reveal group cursor-pointer md:mt-12"> <div class="overflow-hidden rounded-lg mb-4 relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <!-- <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop"  -->
-                        <img src="https://images.unsplash.com/photo-1694797576829-a3001b395a1c?q=80&w=626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                             class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 2">
-                    </div>
-                    <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Aura Architecture</h3>
-                    <p class="text-sm text-zinc-500 mt-1">Agency Portfolio / WebGL & GSAP</p>
-                </article>
+                <a href="https://mycoffee.hanavy.online" target="_blank" class="reveal group cursor-pointer block md:mt-12">
+                    <article>
+                        <div class="overflow-hidden rounded-lg mb-4 relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <!-- <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop"  -->
+                            <!-- <img src="https://images.unsplash.com/photo-1694797576829-a3001b395a1c?q=80&w=626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  -->
+                            <img src="https://res.cloudinary.com/djvqkfvdn/image/upload/v1766573790/Desain_tanpa_judul_6_eu1yjk.png" 
+                                 class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 2">
+                        </div>
+                        <!-- <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Aura Architecture</h3> -->
+                        <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">The Daily Grind</h3>
+                        <p class="text-sm text-zinc-500 mt-1">Coffee Shop & Beverages</p>
+                    </article>
+                </a>
 
-                <article class="reveal group cursor-pointer">
-                    <div class="overflow-hidden rounded-lg mb-4 relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <!-- <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"  -->
-                        <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                             class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 3">
-                    </div>
-                    <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Mono E-Commerce</h3>
-                    <p class="text-sm text-zinc-500 mt-1">Shopify Headless / Next.js</p>
-                </article>
+                <a href="https://cognimap.hanavy.online" target="_blank" class="reveal group cursor-pointer block">
+                    <article>
+                        <div class="overflow-hidden rounded-lg mb-4 relative">
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <!-- <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"  -->
+                            <!-- <img src="https://images.unsplash.com/photo-1635405074683-96d6921a2a68?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  -->
+                            <img src="https://res.cloudinary.com/djvqkfvdn/image/upload/v1766576269/87ad2557-b277-4488-8b4f-1f0e4d4b13c9.png" 
+                                 class="w-full aspect-[4/3] object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" alt="Project 3">
+                        </div>
+                        <!-- <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Mono E-Commerce</h3> -->
+                        <h3 class="font-display text-xl group-hover:text-zinc-300 transition-colors">Cognimap</h3>
+                        <!-- <p class="text-sm text-zinc-500 mt-1">Shopify Headless / Next.js</p> -->
+                        <p class="text-sm text-zinc-500 mt-1">Learn systematically | Powered by AI</p>
+                    </article>
+                </a>
             </div>
         </div>
     </section>
@@ -285,6 +302,13 @@
 
             const revealElements = document.querySelectorAll('.reveal');
             revealElements.forEach(el => observer.observe(el));
+
+            // Safety fallback: Force reveal after 500ms if something gets stuck
+            setTimeout(() => {
+                revealElements.forEach(el => {
+                    if (!el.classList.contains('active')) el.classList.add('active');
+                });
+            }, 500);
         });
     </script>
 </body>
